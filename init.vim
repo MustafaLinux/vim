@@ -1,8 +1,10 @@
-
+" encoding set to UTF-8
 set encoding=UTF-8
+" set numbers of lines
+set number
+" Plugin names 
 
 call plug#begin('C:/Users/Mustafa/AppData/Local/nvim/plugged')
-
 Plug 'joshdick/onedark.vim'
 Plug 'iCyMind/NeoSolarized'
 Plug 'neoclide/coc.nvim'
@@ -20,14 +22,14 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'yuezk/vim-js'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
-
 call plug#end()
 
+" editor theme :
 colorscheme afterglow
-set number
-
+" down aitline theme:
 let g:airline_theme='base16'
 
+" auto add the end of brackets ..etc
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
@@ -35,10 +37,6 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
-"autocmd VimEnter * NERDTree | wincmd p
-
-
 
 
 
